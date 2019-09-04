@@ -1,0 +1,214 @@
+@import "./normalize.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a {
+    border-bottom: 1px solid transparent;
+    color: rgba(81, 149, 251, 0.75);
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+}
+
+a:hover {
+    border-color: currentColor;
+    color: rgba(81, 149, 251, 1);
+    transition: all .25s ease-in-out;
+}
+
+.container-fluid {
+    padding: 0 15px;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+}
+
+.loader {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.loader-inner {
+    top: 0;
+    position: absolute;
+    color: #FFF;
+    padding: 0 100px;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#map {
+    height: 700px;
+    width: 100%;
+}
+
+.btn {
+    background: #dadada;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.inputs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+select,
+input {
+    border: none;
+    flex: 1;
+    height: 45px;
+    margin-right: 15px;
+    padding: 0 12px;
+}
+
+select:last-child,
+input:last-child {
+    margin-right: 0;
+}
+
+table {
+    margin-bottom: 40px;
+}
+
+th.num,
+td.num {
+    width: 50px;
+}
+
+th.company,
+td.company {
+    width: 300px;
+}
+
+th.address,
+td.address {
+    width: 200px;
+}
+
+th.telephones,
+td.telephones {
+    width: 200px;
+}
+
+th.social-networks,
+td.social-networks {
+    width: 600px;
+}
+
+th.website,
+td.website {
+    width: 380px;
+}
+
+td>* {
+    display: block;
+    margin: 8px 0;
+    word-break: break-all;
+}
+
+.suggestions-suggestions {
+    color: #000;
+}
+
+.loader-inner label {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 2px;
+    opacity: 0;
+}
+
+@keyframes lol {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    66% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+}
+
+@-webkit-keyframes lol {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-300px);
+    }
+
+    33% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+    }
+
+    66% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(300px);
+    }
+}
+
+.loader-inner label:nth-child(6) {
+    -webkit-animation: lol 3s infinite ease-in-out;
+    animation: lol 3s infinite ease-in-out;
+}
+
+.loader-inner label:nth-child(5) {
+    -webkit-animation: lol 3s 100ms infinite ease-in-out;
+    animation: lol 3s 100ms infinite ease-in-out;
+}
+
+.loader-inner label:nth-child(4) {
+    -webkit-animation: lol 3s 200ms infinite ease-in-out;
+    animation: lol 3s 200ms infinite ease-in-out;
+}
+
+.loader-inner label:nth-child(3) {
+    -webkit-animation: lol 3s 300ms infinite ease-in-out;
+    animation: lol 3s 300ms infinite ease-in-out;
+}
+
+.loader-inner label:nth-child(2) {
+    -webkit-animation: lol 3s 400ms infinite ease-in-out;
+    animation: lol 3s 400ms infinite ease-in-out;
+}
+
+.loader-inner label:nth-child(1) {
+    -webkit-animation: lol 3s 500ms infinite ease-in-out;
+    animation: lol 3s 500ms infinite ease-in-out;
+}
